@@ -183,6 +183,18 @@ body {
 /* ==========================/HEADER======================== */
 
 /* ==========================HERO========================*/
+
+.overlay {
+    min-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url(../images/hero-img.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .hero {
     background-color: var(--background-hero);
     max-width: 1440px;
@@ -232,8 +244,24 @@ body {
 .about {
     padding-top: 120px;
 }
+.about-svg {
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+}
+.about-svg:nth-child(1) {
+background-image: ;
+}
+.about-svg:nth-child(1) {
 
+}
+.about-svg:nth-child(1) {
 
+}
+.about-svg:nth-child(1) {
+
+}
 /* ==========================/ABOUT========================*/
 
 
