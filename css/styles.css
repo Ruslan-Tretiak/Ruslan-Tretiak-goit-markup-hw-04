@@ -250,17 +250,30 @@ body {
     background: #F4F4FD;
     border-radius: 4px;
 }
-.about-svg:nth-child(1) {
-background-image: ;
+.strategy-svg {
+    background-image:url(../images/antenna\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px 64px;
 }
-.about-svg:nth-child(1) {
+.punctuality-svg {
+    background-image:url(../images/diagram\ 1.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px 64px;
+}
+.diligence-svg{
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px 64px;
 
 }
-.about-svg:nth-child(1) {
-
-}
-.about-svg:nth-child(1) {
-
+.technologies-svg {
+    background-image: url(../images/astronaut\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px 64px;
 }
 /* ==========================/ABOUT========================*/
 
@@ -315,7 +328,7 @@ background-image: ;
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    align-items: center;
     gap: 24px;
     flex-basis: calc((100% - 72px)/4);
 }
@@ -324,9 +337,57 @@ background-image: ;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
+.team-svg {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+.team-svg-box {
+    display:block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--link-color);
+    background-size: 16px 16px ;
+}
+/* .instagram-svg {
+    background-image: url(../images/instagram\ 2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.twitter-svg {
+    background-image: url(../images/twitter\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.facebook-svg {
+    background-image: url(../images/facebook\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.linkiden-svg {
+    background-image: url(../images/linkedin\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+} */
 /* =========================/TEAM=========================*/
 
+/* =========================CUSTOMERS=========================*/
+
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-color);
+    margin-bottom: 72px;
+}
+
+/* =========================/CUSTOMERS=========================*/
 
 /* =========================FOOTER=========================*/
 
@@ -378,7 +439,7 @@ background-image: ;
 .port-btn:focus {
     background-color: var(--potfolio-btn-focus-back);
     color: var(--acent-color);
-    border: transparent;
+    border-color: transparent;
 }
 .port-btn {
     background-color: var(--backgorund-team);
