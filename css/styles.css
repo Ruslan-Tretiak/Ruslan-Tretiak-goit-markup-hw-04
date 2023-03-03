@@ -234,46 +234,24 @@ body {
 
 /* ==========================ABOUT========================*/
 .about-list {
-    display: flex;
-    text-align:left;
+    display:flex;
     gap: 24px;
 }
-.about-cards {
-    flex-basis: calc((100% - 72px)/4);
-}
+
 .about {
     padding-top: 120px;
 }
-.about-svg {
+.about-cards {
+}
+.about-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 264px;
     height: 112px;
     background: #F4F4FD;
     border-radius: 4px;
-}
-.strategy-svg {
-    background-image:url(../images/antenna\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 64px 64px;
-}
-.punctuality-svg {
-    background-image:url(../images/diagram\ 1.svg) ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 64px 64px;
-}
-.diligence-svg{
-    background-image: url(../images/Vector.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 64px 64px;
-
-}
-.technologies-svg {
-    background-image: url(../images/astronaut\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 64px 64px;
+    margin-bottom: 8px;
 }
 /* ==========================/ABOUT========================*/
 
@@ -344,34 +322,20 @@ body {
     padding-right: 16px;
     padding-left: 16px;
 }
+
 .team-svg-box {
-    display:block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--link-color);
-    background-size: 16px 16px ;
 }
-/* .instagram-svg {
-    background-image: url(../images/instagram\ 2.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.social-box {
+
 }
-.twitter-svg {
-    background-image: url(../images/twitter\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.facebook-svg {
-    background-image: url(../images/facebook\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.linkiden-svg {
-    background-image: url(../images/linkedin\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-} */
+
 /* =========================/TEAM=========================*/
 
 /* =========================CUSTOMERS=========================*/
@@ -386,7 +350,25 @@ body {
     color: var(--title-color);
     margin-bottom: 72px;
 }
+.customers-logo-box {
+    display: flex;
+    justify-content: space-between;
 
+}
+.customers-block{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.customers-box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
 /* =========================/CUSTOMERS=========================*/
 
 /* =========================FOOTER=========================*/
