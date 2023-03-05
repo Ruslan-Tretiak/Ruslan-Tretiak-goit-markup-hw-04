@@ -469,8 +469,6 @@ body {
     padding-right: 16px;
     border: 1px solid var(--footer-text);
     border-top: none;
-
-
 }
 .port-btn:hover,
 .port-btn:focus {
