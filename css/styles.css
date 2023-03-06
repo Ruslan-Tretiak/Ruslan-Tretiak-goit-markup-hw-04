@@ -459,9 +459,7 @@ body {
 .portfolio-link :focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.portfolio-link {
-    display: block;
-}
+
 .portfolio-text-block {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -498,9 +496,7 @@ body {
     border-bottom: 1px solid var(--footer-text);
 }
 
-.card {
 
-}
 .card-list {
     display: flex;
     flex-wrap: wrap;
@@ -517,7 +513,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    
+    pointer-events: none;
 }
 .about-text-port {
     color:var(--text-color);
@@ -526,6 +522,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-top: 8px;
+    pointer-events: none;
 
 }
 /* =========================/PORTFOLIO-NAV=========================*/
