@@ -146,6 +146,7 @@ body {
     display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .menu {
     display: flex;
@@ -184,17 +185,6 @@ body {
 
 /* ==========================HERO========================*/
 
-.overlay {
-    min-width: 1440px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-    url(../images/hero-img.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 .hero {
     background-color: var(--background-hero);
     max-width: 1440px;
@@ -202,6 +192,11 @@ body {
     margin: 0 auto;
     padding-bottom: 188px;
     padding-top: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero-img.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 .hero-text {
@@ -223,11 +218,13 @@ body {
     width: 169px;
     height: 56px;
     border-radius: 4px;
+    
 
 }
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--hover-focus-btn);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ==========================/HERO========================*/
@@ -241,25 +238,22 @@ body {
 .about {
     padding-top: 120px;
 }
-.about-svg {
 
-}
 .about-cards {
     display: flex;
     justify-content: center;
-}
-.about-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
     background: #F4F4FD;
     border-radius: 4px;
     margin-bottom: 8px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+.about-box {
+    width: 64px;
+    height: 64px;
+}
+
 /* ==========================/ABOUT========================*/
 
 
@@ -324,11 +318,11 @@ body {
 }
 .team-svg {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 8px;
-    padding-right: 16px;
-    padding-left: 16px;
+    gap: 24px;
 }
+
 
 .team-svg-box {
     display:flex;
@@ -339,8 +333,9 @@ body {
     border-radius: 50%;
     background-color: var(--link-color);
 }
-.social-box {
-
+.social-box :hover,
+.social-box :focus {
+    background-color: #404BBF;
 }
 
 /* =========================/TEAM=========================*/
@@ -353,15 +348,12 @@ body {
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
     color: var(--title-color);
     margin-bottom: 72px;
 }
 .customers-logo-box {
     display: flex;
     justify-content: space-between;
-    /* margin-right: 141px;
-    margin-left: 141px; */
     gap: 24px;
 
 }
@@ -372,15 +364,17 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-}
-.customers-box {
-    display:flex;
-    justify-content: center;
     align-items: center;
     min-width: 168px;
     min-height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    fill: #8E8F99;
+}
+.customers-box :hover,
+.customers-box :focus {
+    fill:  var(--hover-focus-btn);
+    border-color:var(--hover-focus-btn);
 }
 /* =========================/CUSTOMERS=========================*/
 
@@ -442,10 +436,9 @@ body {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-logo :hover,
+.footer-logo :focus {
+    background-color: #31D0AA;
 }
 
 
@@ -457,12 +450,19 @@ body {
     padding-top: 96px;
     padding-bottom: 120px;
 }
-.portfolio-img-bloc {
+.portfolio-img-block {
     display: block;
-    min-width: -100%;
-    height: auto;   
+    min-width: 100%;
+    height: auto; 
 }
-.portfolio-text-bloc {
+.portfolio-link :hover,
+.portfolio-link :focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.portfolio-link {
+    display: block;
+}
+.portfolio-text-block {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
@@ -475,6 +475,7 @@ body {
     background-color: var(--potfolio-btn-focus-back);
     color: var(--acent-color);
     border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .port-btn {
     background-color: var(--backgorund-team);
