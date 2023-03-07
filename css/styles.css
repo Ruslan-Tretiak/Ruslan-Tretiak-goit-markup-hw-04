@@ -218,13 +218,13 @@ body {
     width: 169px;
     height: 56px;
     border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
 
 }
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--hover-focus-btn);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ==========================/HERO========================*/
@@ -420,7 +420,6 @@ body {
     letter-spacing: 0.02em;
     color: var(--acent-color);
     margin-bottom: 16px;
-
 }
 .footer-logo-block {
     display: flex;
@@ -455,8 +454,11 @@ body {
     min-width: 100%;
     height: auto; 
 }
-.portfolio-link :hover,
-.portfolio-link :focus {
+.portfolio-link {
+    display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -513,7 +515,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    pointer-events: none;
+
 }
 .about-text-port {
     color:var(--text-color);
@@ -522,6 +524,5 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-top: 8px;
-    pointer-events: none;
 }
 /* =========================/PORTFOLIO-NAV=========================*/
